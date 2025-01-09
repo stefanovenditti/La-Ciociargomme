@@ -1,0 +1,316 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff7c;
+    font-family: 'Ubuntu';
+}
+
+
+
+
+
+#nav {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    top: 0;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#banner h5 {
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 42px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#banner h5 a {
+    text-decoration: none;
+    background: #002FFF;
+    color: #FFF;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0px 15px 10px -10px #000000;
+}
+
+#logo {
+    margin-top: 3.5px;
+    width: 75px;
+    height: auto;
+
+
+}
+
+
+
+
+
+
+#search {
+    top: 10px;
+    right: 10px;
+    margin-top: 10px;
+    width: 35px;
+    height: auto;
+    position: fixed;
+}
+
+
+.pn {
+
+    background-color: #002FFF;
+
+    text-decoration: none;
+    color: #FFF;
+
+    font-size: 18px;
+
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 10px 20px;
+
+    position: relative;
+
+
+
+
+}
+
+#box ul {
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+    padding: 20px;
+    list-style: none;
+    background-image: url(sfondo-gomme.jpeg);
+    background-size: cover;
+
+}
+
+#box ul li {
+    width: 30%;
+    height: 100%;
+    aspect-ratio: 1;
+    /*forza il box a essere quadrato*/
+    background-color: #ffffff;
+    padding: 20px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+
+    overflow: hidden;
+
+}
+
+#box ul li:hover {
+    background-color: #dde4ff;
+    border-radius: 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+
+#box ul li img {
+    max-width: 100%;
+    max-height: 90%;
+    object-fit: contain;
+
+}
+
+
+
+#box ul li h6 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+#Auto {
+    width: 100%;
+    height: auto;
+}
+
+#Moto {
+    width: 100%;
+    height: auto;
+}
+
+#Cameredaria {
+    width: 100%;
+    height: auto;
+}
+
+#Mezziagricoli {
+    width: 100%;
+    height: auto;
+}
+
+#claim-photos {
+    display: flex;
+    justify-content: center;
+    /* Allinea orizzontalmente al centro */
+    align-items: center;
+    /* Allinea verticalmente al centro */
+    height: 10vh;
+    /* Riempie l'altezza dello schermo */
+
+}
+
+#claim-photos ul {
+    display: flex;
+    gap: 20px;
+    /* Spazio tra le icone */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#claim-photos ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#claim-photos ul li img {
+    width: 50px;
+    /* Dimensione delle icone */
+    height: 50px;
+
+}
+
+/*dark mode*/
+@media (prefers-color-scheme: dark) {
+
+    html,
+    body {
+        background-color: #000000;
+        color: white;
+    }
+
+
+    #nav {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        border-bottom: 1px solid #ffffff2f;
+
+
+    }
+
+    #logo {
+        content: url(logo-bianco.png);
+
+
+    }
+
+    #search {
+        content: url(lente-bianca.png);
+    }
+
+
+
+    #box ul li {
+        background-color: #000000db;
+
+    }
+
+    #box ul li:hover {
+        background-color: #001b9130;
+
+
+
+    }
+
+
+    #box ul li h6 {
+        color: white;
+    }
+
+    #claim-photos .icon {
+
+        filter: invert(100%);
+    }
+}
+
+/*mobile*/
+@media (max-width: 768px) {
+    #nav {
+        display: flex;
+
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+
+    }
+
+    #logo {
+        width: 60px;
+
+    }
+
+    #search {
+        margin-top: 15px;
+        margin-left: 180px;
+        width: 30px;
+    }
+
+    .pn {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    #box ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #box ul li {
+        width: 92.5%;
+        padding: 15px;
+    }
+
+    #claim-photos {
+        display: flex;
+        flex-direction: row;
+        /* Le icone saranno disposte in riga */
+        justify-content: center;
+        /* Centra le icone orizzontalmente */
+        align-items: center;
+        /* Centra le icone verticalmente */
+        padding: 20px;
+        /* Spazio intorno */
+        gap: 15px;
+        /* Spazio tra le icone */
+
+    }
+
+    #claim-photos img {
+        width: 40px;
+        /* Dimensione delle icone più piccola */
+        height: 40px;
+        filter: none;
+        /* Rimuove eventuali filtri precedenti */
+    }
+}

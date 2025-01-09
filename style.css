@@ -1,0 +1,466 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff7c;
+  font-family: 'Ubuntu';
+}
+
+
+/*Barra bianca iniziale*/
+#nav {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Banner con foto e testo*/
+#banner {
+  margin-top: 45px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(autobianca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#logo {
+  margin-top: 3.5px;
+  width: 75px;
+  height: auto;
+}
+
+#search {
+  top: 10px;
+  right: 10px;
+  margin-top: 10px;
+  width: 35px;
+  height: auto;
+  position: fixed;
+}
+
+/*La Ciociargomme*/
+.pn {
+  background-color: #002FFF;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/*Scegli La Ciociargomme...*/
+#banner h2 {
+  color: black;
+  position: relative;
+  font-size: 57px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 1em;
+  padding-bottom: 0;
+  z-index: 10;
+  margin-left: 20px;
+}
+
+/*Acquista un set di pneumatici...*/
+#banner h4 {
+  margin: 0;
+  padding: 2em;
+  margin-left: 20px;
+  font-weight: normal;
+  color: #000000;
+  font-size: 32px;
+}
+
+/*Scopri la promozione*/
+#banner h3 {
+  color: #ffffff;
+  margin-left: 80px;
+  background-color: #df1010;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 30px;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 15px 10px -10px #000000;
+  transition: 2s;
+}
+
+#banner h3:hover {
+  background: #ff0000;
+  box-shadow: 0px 15px 20px 0px #000000;
+}
+
+/*Catalogo e Servizi*/
+#tasti {
+  display: flex;
+  justify-content: center;
+}
+
+#banner h5 {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+#banner h5 a {
+  text-decoration: none;
+  background: #002FFF;
+  color: #FFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 10px -10px #000000;
+  transition: 2s;
+}
+
+#banner h5 a:hover {
+  background-color: #001c9a;
+  box-shadow: 0px 15px 20px 0px #000000;
+}
+
+/*Box con i pneumatici stagionali*/
+#box ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 70px;
+  padding: 20px;
+  list-style: none;
+  background-image: url(sfondo-gomme.jpeg);
+  background-size: cover;
+}
+
+#box ul li:hover {
+  background-color: #dde4ff;
+  border-radius: 5%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+
+#box ul li {
+  width: 30%;
+  height: 100%;
+  aspect-ratio: 1;
+  /*forza il box a essere quadrato*/
+  background-color: #f8f8f8e6;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 5%;
+}
+
+/*Titolo del box*/
+#box ul li h6 {
+  font-size: 29px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*Descrizione del box*/
+#box ul li p {
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+
+/*Pulsante del box*/
+#box ul li .tasto {
+  background-color: #002FFF;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 15px;
+  border-radius: 3%;
+}
+
+/*Icone Social*/
+#claim-photos {
+  display: flex;
+  justify-content: center;
+  /* Allinea orizzontalmente al centro */
+  align-items: center;
+  /* Allinea verticalmente al centro */
+  height: 10vh;
+  /* Riempie l'altezza dello schermo */
+}
+
+#claim-photos ul {
+  display: flex;
+  gap: 20px;
+  /* Spazio tra le icone */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#claim-photos ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#claim-photos ul li img {
+  width: 50px;
+  /* Dimensione delle icone */
+  height: 50px;
+}
+
+/*DARK MODE*/
+@media (prefers-color-scheme: dark) {
+
+  html,
+  body {
+    background-color: #000000;
+    color: white;
+  }
+
+  /*Barra bianca iniziale*/
+  #nav {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid #ffffff2f;
+  }
+
+  /*Banner con foto e testo*/
+  #banner {
+    background-image: url(autonera.jpg);
+  }
+
+  #logo {
+    content: url(logo-bianco.png);
+  }
+
+  #search {
+    content: url(lente-bianca.png);
+  }
+
+  /*Scegli La Ciociargomme...*/
+  #banner h2 {
+    color: white;
+  }
+
+  /*Scopri la promozione*/
+  #banner h3 {
+    color: white;
+  }
+
+  #banner h3:hover {
+    box-shadow: 0px 2.5px 20px 0px #ffffff52;
+  }
+
+  /*Acquista un set di pneumatici...*/
+  #banner h4 {
+    color: white;
+  }
+
+  /*Catalogo e Servizi*/
+  #banner h5 a:hover {
+    background-color: #002fff6b;
+    box-shadow: 0px 2.5px 20px 0px #ffffff52;
+  }
+
+  /*Box con i pneumatici stagionali*/
+  #box ul li {
+    background-color: #000000db;
+  }
+
+  #box ul li:hover {
+    background-color: #001b9130;
+  }
+
+  /*Titolo del box*/
+  #box ul li h6 {
+    color: white;
+  }
+
+  /*Descrizione del box*/
+  #box ul li p {
+    color: white;
+  }
+
+  /*Icone Social*/
+  #claim-photos .icon {
+    filter: invert(100%);
+  }
+}
+
+/*MOBILE*/
+@media (max-width: 768px) {
+
+  /*Barra bianca iniziale*/
+  #nav {
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  #logo {
+    width: 60px;
+  }
+
+  #search {
+    margin-top: 15px;
+    margin-left: 180px;
+    width: 30px;
+  }
+
+  /*La Ciociargomme*/
+  .pn {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  /*Banner con foto e testo*/
+  #banner {
+    background-image: url(auto-bianca-mobile.jpg);
+    background-size: cover;
+  }
+
+  /*Scegli La Ciociargomme...*/
+  #banner h2 {
+    font-size: 31px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-left: 0;
+    margin-left: 20px;
+    margin-top: 60px;
+  }
+
+  /*Acquista un set di pneumatici...*/
+  #banner h4 {
+    font-size: 24px;
+    padding-top: 0;
+    padding: 0;
+  }
+
+  /*Scopri la promozione*/
+  #banner h3 {
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: none;
+    font-size: 25px;
+    width: fit-content;
+    margin: 0;
+    margin-left: 20.57%;
+    margin-top: 390px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 320px;
+  }
+
+  /*Catalogo e Servizi*/
+  #banner h5 {
+    display: none;
+  }
+
+  #tasti {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Catalogo {
+    margin-top: 400px;
+  }
+
+  #Servizi {
+    margin: 0;
+
+  }
+
+  /*Box con i pneumatici stagionali*/
+  #box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  #box ul li {
+    width: 92.5%;
+    padding: 15px;
+  }
+
+  /*Titolo del box*/
+  #box ul li h6 {
+    font-size: 33px;
+  }
+
+  /*Descrizione del box*/
+  #box ul li p {
+    font-size: 25px;
+  }
+
+  /*Pulsante del box*/
+  #box ul li .tasto {
+    font-size: 20px;
+  }
+
+  /*Icone Social*/
+  #claim-photos {
+    display: flex;
+    flex-direction: row;
+    /* Le icone saranno disposte in riga */
+    justify-content: center;
+    /* Centra le icone orizzontalmente */
+    align-items: center;
+    /* Centra le icone verticalmente */
+    padding: 20px;
+    /* Spazio intorno */
+    gap: 15px;
+    /* Spazio tra le icone */
+
+  }
+
+  #claim-photos img {
+    width: 40px;
+    /* Dimensione delle icone più piccola */
+    height: 40px;
+    filter: none;
+    /* Rimuove eventuali filtri precedenti */
+  }
+}
+
+/*DARK MODE MOBILE (per la background-image) */
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  #banner {
+    background-image: url(auto-nera-mobile.jpg);
+    background-size: contain;
+  }
+}
